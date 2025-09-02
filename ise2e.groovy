@@ -31,6 +31,7 @@ stages {
                 cfn_repo_url="https://github.com/aaujayasena/testgrid.git" 
                 cfn_repo_branch="master"
                 if (pre_release.toBoolean()){
+                    updateType="pre-release"
                 }
                 else{
                     updateType="u2" 
