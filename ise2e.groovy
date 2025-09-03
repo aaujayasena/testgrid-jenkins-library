@@ -29,7 +29,7 @@ stages {
         steps {
             script {
                 cfn_repo_url="https://github.com/aaujayasena/testgrid.git" 
-                cfn_repo_branch="e2ecloudformation"
+                cfn_repo_branch="master"
                 if (pre_release.toBoolean()){
                     updateType="pre-release"
                 }
