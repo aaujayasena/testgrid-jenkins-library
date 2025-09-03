@@ -103,7 +103,7 @@ stages {
                     echo "Writting product update type to parameter file"
                     ./scripts/write-parameter-file.sh "UpdateType" '''+updateType+''' "${WORKSPACE}/parameters/parameters.json"
                     echo "Writting test type to parameter file"
-                    ./scripts/write-parameter-file.sh "TestType" "e2e" "${WORKSPACE}/parameters/parameters.json"
+                    ./scripts/write-parameter-file.sh "TestType" "intg" "${WORKSPACE}/parameters/parameters.json"
                     echo "Writting product Surefire Report Directory"
                     ./scripts/write-parameter-file.sh "SurefireReportDir" ${surefire_report_dir} "${WORKSPACE}/parameters/parameters.json"
                     echo "Writting product download location"
